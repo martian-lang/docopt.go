@@ -152,6 +152,7 @@ func handleError(err error, usage string) string {
 }
 
 func parseSection(name, source string) []string {
+	source = regexp.MustCompile(`\n{2,}\s+--`).ReplaceAllString(source, "\n\t--")
 	p := regexp.MustCompile(`(?im)^([^\n]*` + name + `[^\n]*\n?(?:[ \t].*?(?:\n|$))*)`)
 	s := p.FindAllString(source, -1)
 	if s == nil {
