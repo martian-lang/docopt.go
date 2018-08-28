@@ -5,11 +5,11 @@
 Package docopt parses command-line arguments based on a help message.
 
 ⚠ Use the alias “docopt-go”:
-	import "github.com/docopt/docopt-go"
+	import "github.com/martian-lang/docopt.go"
 or
-	$ go get github.com/docopt/docopt-go
+	$ go get github.com/martian-lang/docopt.go
 */
-package docopt
+package docopt // github.com/martian-lang/docopt
 
 import (
 	"fmt"

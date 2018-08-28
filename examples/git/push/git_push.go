@@ -2,7 +2,7 @@ package git
 
 import (
 	"fmt"
-	"github.com/docopt/docopt-go"
+	"github.com/martian-lang/docopt.go"
 )
 
 func main() {
